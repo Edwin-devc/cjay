@@ -1,0 +1,10 @@
+* {
+    font-family: "Montserrat Alternates Light";
+}
+a {
+    color: #000 !important;
+    text-decoration: none;
+}
+a:hover {
+    color: #1a1e21 !important;
+}

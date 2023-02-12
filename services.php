@@ -35,16 +35,16 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="assets/images/logo.jpg"alt="" class="img-fluid"></a>
+      <a href="index.php" class="logo me-auto"><img src="assets/images/logo.jpg"alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a class="active" href="services.php">Services</a></li>
           <li><a href="projects.view.php">Projects</a></li>
           <li><a href="tel:078-516-6587">+256785166587</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -80,7 +80,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Pest Control</a></h3>
+                <h3><a href="service-details.php">Pest Control</a></h3>
                 <p>We are at the core of offering the best pest control services in Uganda. 
                   Our fumigation and pest control services are fast, effective, 
                   and utilizes the eco-friendly safe products available in the industry.</p>
@@ -97,7 +97,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Sofa & Carpet Cleaning</a></h3>
+                <h3><a href="service-details.php">Sofa & Carpet Cleaning</a></h3>
                 <p>Are your sofa chairs looking old due to dirt and dust accumulation?
                   Alright, we do clean them for you with our
                   vacuum cleaning technology.</p>
@@ -114,7 +114,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Compound Cleaning & Maintenance</a></h3>
+                <h3><a href="service-details.php">Compound Cleaning & Maintenance</a></h3>
                 <p>How your compound looks matters alot to us.
                   Our compound cleaning services cover paver-cleaning, getting rid of that algae among more.</p>
               </div>
@@ -138,7 +138,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Disinfection</a></h3>
+                <h3><a href="service-details.php">Disinfection</a></h3>
                 <p>We offer professional disinfection cleaning services and antiviral sanitization 
                   services which can be requested as after contamination in a work or home environment.</p>
               </div>
@@ -154,7 +154,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Roof Tile Cleaning</a></h3>
+                <h3><a href="service-details.php">Roof Tile Cleaning</a></h3>
                 <p>Avoid expensive repairs, moss, algae and lichens by removing them from 
                   your roof tiles quickly if it is covering a significant area of your roof 
                   which are making your roof look old. We can do it.
@@ -172,7 +172,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Laundry & Dry Cleaning</a></h3>
+                <h3><a href="service-details.php">Laundry & Dry Cleaning</a></h3>
                 <p>We are experts in stain and damage removal. Our laundry and dry cleaning 
                   services involve cleaning curtains, mosquito nets, beddings and clothes.</p>
               </div>
@@ -195,7 +195,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html"></a>Residential & Commercial Cleaning</h3>
+                <h3><a href="service-details.php"></a>Residential & Commercial Cleaning</h3>
                 <p>We do regular cleaning, Deep cleaning, such as power washing, dusting, 
                   polishing floors, Bathroom cleaning which is more labour-intensive and more expensive. 
                   Let's do it for you at friendly prices.</p>
@@ -212,7 +212,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Facilities Management</a></h3>
+                <h3><a href="service-details.php">Facilities Management</a></h3>
                 <p>
                 We provide services to support all aspects of facilities management needs; from daily 
                 office cleaning, window cleaning, carpet and floor cleaning and arranging washroom and 
@@ -231,7 +231,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Plumbing & Maintenance</a></h3>
+                <h3><a href="service-details.php">Plumbing & Maintenance</a></h3>
                 <p>
                   We do installations and maintenance of all plumbing appliances including 
                   kitchen sink installation, bathroom sink installation, bathtub installation, 

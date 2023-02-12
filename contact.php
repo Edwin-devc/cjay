@@ -35,16 +35,16 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="assets/images/logo.jpg"alt="" class="img-fluid"></a>
+      <a href="index.php" class="logo me-auto"><img src="assets/images/logo.jpg"alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="services.php">Services</a></li>
           <li><a href="projects.view.php">Projects</a></li>
           <li><a href="tel:078-516-6587">+256785166587</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a class="active" href="contact.php">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

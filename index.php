@@ -35,16 +35,16 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="assets/images/logo.jpg"alt="" class="img-fluid"></a>
+      <a href="index.php" class="logo me-auto"><img src="assets/images/logo.jpg"alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="services.php">Services</a></li>
           <li><a href="projects.view.php">Projects</a></li>
           <li><a href="tel:078-516-6587">+256785166587</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -56,7 +56,7 @@
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Cjay Home Solutions</h1>
       <h2>We are a one-stop solution for all of your cleaning services requirements.<br>And committed to creating a clean and healthy environment for you and your family.</h2>
-      <a href="services.html" class="btn-get-started">Book Now</a>
+      <a href="services.php" class="btn-get-started">Book Now</a>
     </div>
   </section><!-- End Hero -->
 
@@ -130,7 +130,7 @@
                 cleaning and offer proven processes that allow you to live more and clean less.
               </p>
               <div class="text-center">
-                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="about.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Pest Control</a></h3>
+                <h3><a href="service-details.php">Pest Control</a></h3>
                 <p>We are at the core of offering the best pest control services in Uganda. 
                   Our fumigation and pest control services are fast, effective, 
                   and utilizes the eco-friendly safe products available in the industry.</p>
@@ -208,7 +208,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Sofa & Carpet Cleaning</a></h3>
+                <h3><a href="service-details.php">Sofa & Carpet Cleaning</a></h3>
                 <p>Are your sofa chairs looking old due to dirt and dust accumulation?
                   Alright, we do clean them for you with our
                   vacuum cleaning technology.</p>
@@ -225,7 +225,7 @@
                   <p class="price"></p>
                 </div>
 
-                <h3><a href="course-details.html">Compound Cleaning & Maintenance</a></h3>
+                <h3><a href="service-details.php">Compound Cleaning & Maintenance</a></h3>
                 <p>How your compound looks matters alot to us.
                   Our compound cleaning services cover paver-cleaning, getting rid of that algae among more.</p>
               </div>

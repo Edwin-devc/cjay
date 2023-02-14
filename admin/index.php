@@ -59,18 +59,18 @@
                     echo "<tr>";
                     echo "<th>#</th>";
                     echo "<th>Email</th>";
-                    echo "<th>Action</th>";
+                    echo "<th>Status</th>";
                     echo "</tr>";
 
                     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         echo "<tr>";
                         echo "<td>" . $row['sub_id'] . "</td>";
                         echo "<td>" . $row['email'] . "</td>";
-                        echo "<td><i class='bi bi-trash-fill text-primary mx-4'></i></td>";
+                        echo "<td>Active</td>";
                         echo "</tr>";
                     }
                     echo "</table>";
-                $conn = null;
+                //$conn = null;
                 ?>
             </div>
 
@@ -87,6 +87,39 @@
                 </div>
 
             </div>
+            <div class="mx-3 mt-2">
+                <?php
+                $stmt = $conn->prepare("SELECT id, file_name, category, uploaded_on FROM photos");
+                $stmt->execute();
+                echo "<table class='table table-striped'>";
+                echo "<thead>";
+                echo "<tr>";
+                echo "<th>#</th>";
+                echo "<th>Image</th>";
+                echo "<th>Category</th>";
+                echo "<th>Date</th>";
+                echo "</tr>";
+                echo "</thead>";
+                echo "<tbody>";
+
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+                {
+                    echo "<tr>";
+                    echo "<td>".$row['id']."</td>";
+                    echo "<td>";
+                    echo "<img class='img-fluid' width='80px' src='../images/".$row['file_name']."'>";
+                    echo "</td>";
+                    echo "<td>".$row['category']."</td>";
+                    echo "<td>".$row['uploaded_on']."</td>";
+                    echo "</tr>";
+                }
+                echo "</tbody>";
+                echo "</table>";
+                $conn = null;
+                ?>
+            </div>
+
+
 <!--    add photos form modal   -->
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -97,20 +130,20 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Category:</label>
-                                <input type="text" class="form-control" id="recipient-name">
+                        <form method="post" action="upload.php" enctype="multipart/form-data">
+                            <div class="form-group mb-3">
+                                <label for="category-name" class="col-form-label">Category:</label>
+                                <input type="text" class="form-control" id="category-name" name="category">
                             </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                            <div class="form-group mb-3">
+                                <input class="form-control" type="file" name="image" value="">
                             </div>
+                            <div class="form-group">
+                                <input class="btn btn-secondary" type="reset" value="Cancel"/>
+                                <input class="btn btn-success" name="upload" type="submit" value="Upload">
+                            </div>
+
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">upload</button>
                     </div>
                 </div>
             </div>

@@ -42,7 +42,7 @@
           <li><a class="active" href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="services.php">Services</a></li>
-          <li><a href="projects.view.php">Projects</a></li>
+          <li><a href="projects.php">Projects</a></li>
           <li><a href="tel:078-516-6587">+256785166587</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>

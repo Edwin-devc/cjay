@@ -14,7 +14,14 @@
                                     <i class="bi bi-people-fill text-white"></i>
                                 </div>
                                 <div class="col text-white text-center">
-                                    <h2 class="fw-bold mt-3">56</h2>
+                                    <h2 class="fw-bold mt-3">
+                                        <?php
+                                            $stmt = $conn->prepare('SELECT * FROM subscriber');
+                                            $stmt->execute();
+                                            $numRows = $stmt->rowCount();
+                                             echo $numRows;
+                                        ?>
+                                    </h2>
                                     <p class="fw-bold">Subscribers</p>
                                 </div>
                             </div>
@@ -27,7 +34,14 @@
                                     <i class="bi bi-image-fill text-white"></i>
                                 </div>
                                 <div class="col text-white text-center">
-                                    <h2 class="fw-bold mt-3">12</h2>
+                                    <h2 class="fw-bold mt-3">
+                                        <?php
+                                            $stmt=$conn->prepare('SELECT * FROM photos');
+                                            $stmt->execute();
+                                            $numRows = $stmt->rowCount();
+                                            echo $numRows;
+                                        ?>
+                                    </h2>
                                     <p class="fw-bold">Photos</p>
                                 </div>
                             </div>

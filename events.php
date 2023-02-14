@@ -51,7 +51,7 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="services.php">Courses</a></li>
-          <li><a href="projects.view.php">Trainers</a></li>
+          <li><a href="projects.php">Trainers</a></li>
           <li><a class="active" href="events.php">Events</a></li>
           <li><a href="pricing.php">Pricing</a></li>
 

@@ -52,7 +52,7 @@
             <div class="px-3 mt-3">
                 <h3>Subscribers</h3>
                 <?php
-                    $stmt = $conn->prepare("SELECT sub_id, email FROM subscriber");
+                    $stmt = $conn->prepare("SELECT email FROM subscriber");
                     $stmt->execute();
 
                     echo "<table class='table table-striped pt-5'>";
@@ -61,16 +61,15 @@
                     echo "<th>Email</th>";
                     echo "<th>Status</th>";
                     echo "</tr>";
-
+                    $count = 1;
                     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         echo "<tr>";
-                        echo "<td>" . $row['sub_id'] . "</td>";
+                        echo "<td>" . $count++. "</td>";
                         echo "<td>" . $row['email'] . "</td>";
                         echo "<td>Active</td>";
                         echo "</tr>";
                     }
                     echo "</table>";
-                //$conn = null;
                 ?>
             </div>
 
@@ -89,7 +88,7 @@
             </div>
             <div class="mx-3 mt-2">
                 <?php
-                $stmt = $conn->prepare("SELECT id, file_name, category, uploaded_on FROM photos");
+                $stmt = $conn->prepare("SELECT file_name, category, uploaded_on FROM photos");
                 $stmt->execute();
                 echo "<table class='table table-striped'>";
                 echo "<thead>";
@@ -101,24 +100,26 @@
                 echo "</tr>";
                 echo "</thead>";
                 echo "<tbody>";
-
+                $count = 1;
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
                 {
-                    echo "<tr>";
-                    echo "<td>".$row['id']."</td>";
-                    echo "<td>";
-                    echo "<img class='img-fluid' width='80px' src='../images/".$row['file_name']."'>";
-                    echo "</td>";
-                    echo "<td>".$row['category']."</td>";
-                    echo "<td>".$row['uploaded_on']."</td>";
-                    echo "</tr>";
+                        echo "<tr>";
+                        echo "<td>";
+                            echo $count++;
+                        echo "</td>";
+                        echo "<td>";
+                        echo "<img class='img-fluid' width='60px' src='../images/".$row['file_name']."'>";
+                        echo "</td>";
+                        echo "<td>".$row['category']."</td>";
+                        echo "<td>".$row['uploaded_on']."</td>";
+                        echo "</tr>";
                 }
+
                 echo "</tbody>";
                 echo "</table>";
                 $conn = null;
                 ?>
             </div>
-
 
 <!--    add photos form modal   -->
 

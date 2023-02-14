@@ -6,17 +6,27 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a href="./index.php">Home</a></li>
-                <li><a href="./about.php">About</a></li>
-                <li><a href="./services.php">Services</a></li>
-                <li><a href="./projects.php">Projects</a></li>
-                <li><a href="tel:078-516-6587">+256785166587</a></li>
-                <li><a href="./contact.php">Contact</a></li>
+                <li><a id="n-link" class=" " href="./index.php">Home</a></li>
+                <li><a id="n-link" class=" " href="./about.php">About</a></li>
+                <li><a id="n-link" class=" " href="./services.php">Services</a></li>
+                <li><a id="n-link" class=" " href="./projects.php">Projects</a></li>
+                <li><a id="n-link" class=" " href="tel:078-516-6587">+256785166587</a></li>
+                <li><a id="n-link" class=" " href="./contact.php">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
 
         <a href="./login.view.php" class="get-started-btn">Login</a>
+        <script>
+             const nLink = document.getElementById("n-link");
+            nLink.addEventListener("click",() => {
+                if(nLink.classList.contains("active")) {
+                    nLink.classList.remove("active");
+                } else {
+                    nLink.classList.add("active");
+                }
+            });
+        </script>
 
     </div>
 </header><!-- End Header -->

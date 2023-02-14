@@ -41,8 +41,21 @@
                     <h4>Join Our Newsletter</h4>
                     <p>Receive our updates and hacks on cleaning your home and office space hustle free</p>
                     <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                        <input type="email" name="email" required />
+                        <input type="submit" name="subscribe" value="Subscribe"/>
                     </form>
+                    <?php
+
+                        if (isset($_POST['subscribe']))
+                        {
+                            include './connection.php';
+                            $sql = "INSERT INTO subscriber (email) VALUE (?)";
+                            $stmt = $conn->prepare($sql);
+                            $stmt->execute([$_POST['email']]);
+                            $conn = null;
+                        }
+
+                    ?>
                 </div>
 
             </div>
